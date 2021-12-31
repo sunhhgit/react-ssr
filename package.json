@@ -1,0 +1,33 @@
+{
+  "name": "react-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build client": "webpack --config build/webpack-client.config.js --watch",
+    "build server": "webpack --config build/webpack-server.config.js --watch",
+    "start server": "nodemon dist/server/index.js"
+  },
+  "author": "sunhh",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-proposal-class-properties": "^7.16.5",
+    "@babel/plugin-proposal-decorators": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.2.0",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "webpack": "^5.65.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.1"
+  }
+}
